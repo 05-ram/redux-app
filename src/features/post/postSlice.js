@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { useSelector } from "react-redux";
 
 const initialState = [
     {
@@ -20,5 +21,5 @@ const postSlice = createSlice({
 
     }
 })
-
+export const selectAllPost = (state) => state.post;
 export default postSlice.reducer;
