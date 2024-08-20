@@ -25,6 +25,10 @@ button {
   margin-top: 16px;
 }
 
+.mb-2 {
+  margin-bottom: 16px;
+}
+
 input {
   height: 44px;
   padding-left: 16px;

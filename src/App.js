@@ -1,4 +1,4 @@
-import PostList from './features/post/PostList';
+import PostList from './components/PostList';
 import './global.css';
 
 function App() {
