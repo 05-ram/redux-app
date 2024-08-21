@@ -17,6 +17,8 @@ const AddPostForm = () => {
                 postAdded(
                     { id: nanoid(), skill, design })
             )
+            setSkill('');
+            setDesign('');
         }
     }
     return (
