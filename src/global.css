@@ -31,7 +31,8 @@ button {
   margin-bottom: 16px;
 }
 
-input {
+input,
+select {
   height          : 44px;
   padding-left    : 16px;
   width           : 80px;
@@ -40,6 +41,14 @@ input {
   background-color: transparent;
   border          : 1px solid #fff;
   color           : #fff;
+}
+
+select {
+  width: 100%;
+}
+
+option {
+  color: #000;
 }
 
 .g-20 {
