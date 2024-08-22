@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, nanoid } from "@reduxjs/toolkit";
 import { useSelector } from "react-redux";
 
 const initialState = [
@@ -18,8 +18,19 @@ const postSlice = createSlice({
     name: 'post',
     initialState,
     reducers: {
-        postAdded(state, action) {
-            state.push(action.payload)
+        postAdded: {
+            reducer(state, action) {
+                state.push(action.payload)
+            },
+            prepare(skill, design) {
+                return {
+                    payload: {
+                        id: nanoid(),
+                        skill,
+                        design
+                    }
+                }
+            }
         }
     }
 })

@@ -14,8 +14,7 @@ const AddPostForm = () => {
     const handleClick = () => {
         if (skill && design) {
             dispatch(
-                postAdded(
-                    { id: nanoid(), skill, design })
+                postAdded(skill, design)
             )
             setSkill('');
             setDesign('');
